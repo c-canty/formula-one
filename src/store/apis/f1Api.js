@@ -10,7 +10,7 @@ const f1Api = createApi({
       fetchDrivers: builder.query({
         query: () => {
           return {
-            url: '2024/drivers',
+            url: '2024/drivers.json',
             method: 'GET',
           };
         },
@@ -18,7 +18,7 @@ const f1Api = createApi({
       fetchConstructors: builder.query({
         query: () => {
           return {
-            url: '2024/constructors',
+            url: '2024/constructors.json',
             method: 'GET',
           };
         },
@@ -26,7 +26,7 @@ const f1Api = createApi({
       fetchCircuits: builder.query({
         query: () => {
           return {
-            url: '2024/circuits',
+            url: '2024/circuits.json',
             method: 'GET',
           };
         },
@@ -34,7 +34,7 @@ const f1Api = createApi({
       fetchLastResults: builder.query({
         query: () => {
           return {
-            url: 'current/last/results',
+            url: 'current/last/results.json',
             method: 'GET',
           };
         },
@@ -42,6 +42,8 @@ const f1Api = createApi({
     };
   },
 });
+
+console.log("f1Api: ", f1Api);
 
 export const {
   useFetchDriversQuery,
