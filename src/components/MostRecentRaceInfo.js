@@ -19,16 +19,20 @@ function ResultList() {
     <div className="last-race-info">
       
       <div className="row">
-        <div className="col-md-12">
+        <div className="col-md-6">
             <br></br>
-            
           <h3>Latest Race: <b>{race.raceName}</b></h3>
           <p>{race.Circuit.circuitName}</p>
           <p>{race.Circuit.Location.locality}, {race.Circuit.Location.country}</p>
           <p>Date: {race.date}</p>
           <p>Time: {race.time} (Z = Zulu time, also known as UTC)</p> {/* Render the 'time' property of the 'time' object */}
         </div>
+        <div className="col-md-6">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/8AYy-BcjRXg?si=Vv0vbz-3IMPnSsNs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        
       </div>
+      <br></br>
       <div className="row">
         {results.map((result, index) => (
           <div key={index} className="col-lg-3 mb-4">
