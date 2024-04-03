@@ -6,7 +6,7 @@ function DriverList() {
   if (isFetching) {
     return <div>Loading...</div>;
   }
-
+  // if there is an error, or if there is no data, or if there is no MRData, or if there is no DriverTable, or if there are no Drivers
   if (error || !data || !data.MRData || !data.MRData.DriverTable || !data.MRData.DriverTable.Drivers) {
     return <div>Error loading drivers.</div>;
   }
