@@ -28,7 +28,8 @@ function ResultList() {
           <p>Time: {race.time} (Z = Zulu time, also known as UTC)</p> {/* Render the 'time' property of the 'time' object */}
         </div>
         <div className="col-md-6">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/8AYy-BcjRXg?si=Vv0vbz-3IMPnSsNs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/WYxll-B5VSQ?si=HcDYgsx6d9L3jbkN&autoplay=1&muted=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
         </div>
         
       </div>
